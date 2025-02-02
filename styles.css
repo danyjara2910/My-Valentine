@@ -6,7 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: url('https://source.unsplash.com/1600x900/?purple-flower') no-repeat center center/cover;
+    background: url('https://images.unsplash.com/photo-1516587551881-b9ca6047b4e4?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjA3fDB8MHxwaG90by1wYWdlfHx8fGVmZmVjdGl2ZSUyMGZsb3dlcnxlbnwwfHx8fDE2Nzc4MTQ2MzM&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center/cover;
     font-family: Arial, sans-serif;
     position: relative;
 }
@@ -16,8 +16,30 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7); /* Fondo negro con opacidad */
     color: white;
     padding: 20px;
     border-radius: 10px;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+p {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 600px) {
+    .overlay {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
 }
