@@ -6,9 +6,21 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: url('https://images.unsplash.com/photo-1516587551881-b9ca6047b4e4?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjA3fDB8MHxwaG90by1wYWdlfHx8fGVmZmVjdGl2ZSUyMGZsb3dlcnxlbnwwfHx8fDE2Nzc4MTQ2MzM&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center/cover;
     font-family: Arial, sans-serif;
     position: relative;
+    background-color: black; /* Fondo negro mientras se carga la imagen */
+    animation: fadeInBackground 3s ease-in-out forwards; /* Animación de fondo */
+}
+
+@keyframes fadeInBackground {
+    0% {
+        background: url('https://www.vhv.rs/dpng/d/23-238848_purple-watercolor-flower-png-transparent-png.png') no-repeat center center/cover;
+        opacity: 0;
+    }
+    100% {
+        background: url('https://www.vhv.rs/dpng/d/23-238848_purple-watercolor-flower-png-transparent-png.png') no-repeat center center/cover;
+        opacity: 1;
+    }
 }
 
 .overlay {
